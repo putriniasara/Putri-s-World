@@ -1,0 +1,207 @@
+.aboutme-bg {
+    background-image: url(websiteimages/background2.jpg);
+}
+
+.top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(240, 185, 203);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 30px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 26px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px black;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+nav a {
+    color:white;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+nav a:hover {
+    color: hotpink;
+}
+
+.page-title {
+    text-align: center;
+    margin: 65px 7px;
+    font-size: 50px;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
+
+.intro-row {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 60px;
+    padding: 30px;
+    background-color: pink;
+    border-radius: 25px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.photo {
+    width: 250px;
+    border: 5px solid white;
+}
+
+.info-table {
+    border-collapse: collapse;
+    background-color: rgba (225,225,225, 0.3);
+}
+
+.info-table td {
+    border: 2px solid white ;
+    padding: 10px 15px;
+    color: black;
+    font-weight: bold;
+}
+
+.section-title {
+    text-align: center;
+    margin: 60px 0 30px;
+    font-size: 28px;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    font-family: "Arial Black", Arial, sans-serif;
+}
+
+.image-box {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.image-box input {
+    display: none;
+}
+
+.caption {
+    display: none;
+    margin: 15px auto;
+    padding: 15px;
+    border: 3px solid white;
+    background-color: transparent;
+    width: fit-content;
+}
+
+.image-box input:checked ~ .caption {
+    display: block;
+}
+
+.polaroid {
+    background-color: whitesmoke;
+    padding: 17px 12px 45px;
+    border-radius: 0 20px 15px rgba (0,0,0,0.6);
+}
+
+.polaroid {
+    border: 6 px solid white;
+}
+
+.family-row {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 20px;
+}
+
+.polaroid-landscape {
+    background-color: whitesmoke;
+    padding: 12px 12px 45px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.6);
+    border-radius: 8px;
+}
+
+.polaroid-landscape img {
+    width: 320px;
+    height: 200px;
+    object-fit: cover;
+    border: 6px solid white;
+}
+
+.family-caption {
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    margin: 20px auto 60px auto;
+    font-size: 16px;
+    padding: 15px;
+    border: 3px solid white;       
+    display: block;           
+    background-color: transparent;  
+    width: fit-content;
+}
+
+
+.education-row {
+    display: flex;
+    justify-content: center;
+    gap: 40px;                       
+    margin-bottom: 40px;
+    padding: 30px;
+}
+
+
+.polaroid-landscape {
+    background-color: whitesmoke;
+    padding: 12px 12px 45px;        
+    box-shadow: 0 6px 15px rgba(0,0,0,0.6);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.polaroid-landscape img {
+    width: 300px;                     
+    height: 200px;                   
+    object-fit: cover;
+    border: 6px solid white;         
+}
+
+.edu-caption {
+    text-align: center;              
+    color: black;
+    font-weight: bold;
+    margin: 15px auto 0 auto;         
+    font-size: 16px;
+    padding: 12px;
+    border: 3px black;          
+    display: block;
+    width: fit-content;               
+    background-color: transparent;
+}
+
+.fade-in {
+    animation: fadeInAnimation 1.5s ease-in-out;
+}
+
+@keyframes fadeInAnimation {
+    0% { opacity: 0; transform: translateY(20px); }   
+    100% { opacity: 1; transform: translateY(0); }    
+}

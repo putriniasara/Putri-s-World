@@ -1,0 +1,102 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Gallery | Putri's World</title>
+        <link rel="stylesheet" href="gallery.css">
+    </head>
+
+    <body class="gallery-bg fade-in">
+        
+        <header class="top-bar">
+            <span class="logo">Putri's World</span>
+            
+            <nav>
+                <a href="homepage.html">Home</a>
+                <a href="aboutme.html">About Me</a>
+                <a href="entertainment.html">Entertaiment</a>
+                <a href="bucketlist.html">Bucket List</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </header>
+
+        <h1 class="page-title">MY GALLERY</h1>
+
+        <ul class="gallery-menu">
+            <li class="gallery-item" onclick="toggleGallery( 'myself', this)">Myself</li>
+            <li class="gallery-item" onclick="toggleGallery( 'friends', this)">Friends</li>
+            <li class="gallery-item" onclick="toggleGallery( 'activities', this)">University Activities</li>
+        </ul>
+
+        <section class="gallery-content" id="myself">
+            <article class="gallery-row">
+                <img src="websiteimages/me1.jpg" class="gallery-img">
+                <img src="websiteimages/me2.jpg" class="gallery-img">
+                <img src="websiteimages/me3.jpg" class="gallery-img">
+            </article>
+            <article class="gallery-row">
+                <img src="websiteimages/me4.jpg" class="gallery-img">
+                <img src="websiteimages/me5.jpg" class="gallery-img">
+                <img src="websiteimages/me6.jpg" class="gallery-img">
+            </article>
+        </section>
+
+        <section class="gallery-content" id="friends">
+         <article class="gallery-row">
+            <img src="websiteimages/friend1.jpg" class="gallery-img">
+            <img src="websiteimages/friend2.jpg" class="gallery-img">
+            <img src="websiteimages/friend3.jpg" class="gallery-img">
+         </article>
+         <article class="gallery-row">
+            <img src="websiteimages/friend4.jpg" class="gallery-img">
+            <img src="websiteimages/friend5.jpg" class="gallery-img">
+            <img src="websiteimages/friend6.jpg" class="gallery-img">
+         </article>
+        </section>
+
+        <section class="gallery-content" id="activities">
+         <article class="gallery-row">
+            <img src="websiteimages/uni1.jpg" class="gallery-img">
+            <img src="websiteimages/uni2.jpg" class="gallery-img">
+            <img src="websiteimages/uni3.jpg" class="gallery-img">
+         </article>
+         <article class="gallery-row">
+            <img src="websiteimages/uni4.jpg" class="gallery-img">
+            <img src="websiteimages/uni5.jpg" class="gallery-img">
+            <img src="websiteimages/uni6.jpg" class="gallery-img">
+         </article
+         >
+         <article class="gallery-row">
+            <img src="websiteimages/uni7.jpg" class="gallery-img">
+            <img src="websiteimages/uni8.jpg" class="gallery-img">
+            <img src="websiteimages/uni9.jpg" class="gallery-img">
+         </article>
+        </section>
+
+       <script>
+    function toggleGallery(sectionId, element) {
+        const sections = document.querySelectorAll('.gallery-content');
+        const bullets = document.querySelectorAll('.gallery-item');
+
+        sections.forEach(sec => {
+            if (sec.id === sectionId) {
+                sec.style.display = "block"; // show clicked section
+            } else {
+                sec.style.display = "none";  // hide all others
+            }
+        });
+
+        bullets.forEach(bullet => {
+            if (bullet === element) {
+                bullet.style.color = "hotpink";
+                bullet.style.textDecoration = "underline";
+            } else {
+                bullet.style.color = "white";
+                bullet.style.textDecoration = "none";
+            }
+        });
+        }
+        </script>
+
+    </body>
+</html>
